@@ -15,17 +15,17 @@ sudo mkdir -p $TOOLCHAIN_DIR
 
 # 根据版本选择下载 URL
 case $TOOLCHAIN_VERSION in
-    "19.07")
-        SDK_URL="https://downloads.immortalwrt.org/releases/19.07/targets/$TARGET/$SUBARCH/immortalwrt-sdk-19.07-$TARGET-${SUBARCH}_gcc-7.5.0_musl.Linux-x86_64.tar.xz"
+    "24.10")
+        SDK_URL="https://mirrors.pku.edu.cn/immortalwrt/releases/24.10-SNAPSHOT/targets/$TARGET/$SUBARCH/immortalwrt-sdk-24.10-SNAPSHOT-$TARGET-${SUBARCH}_gcc-13.3.0_musl.Linux-x86_64.tar.zst"
         ;;
     "21.02")
-        SDK_URL="https://downloads.immortalwrt.org/releases/21.02/targets/$TARGET/$SUBARCH/immortalwrt-sdk-21.02-$TARGET-${SUBARCH}_gcc-8.4.0_musl.Linux-x86_64.tar.xz"
+        SDK_URL="https://mirrors.pku.edu.cn/immortalwrt/releases/21.02.0/targets/$TARGET/$SUBARCH/immortalwrt-sdk-21.02.0-$TARGET-${SUBARCH}_gcc-8.4.0_musl.Linux-x86_64.tar.zst"
         ;;
-    "22.03")
-        SDK_URL="https://downloads.immortalwrt.org/releases/22.03/targets/$TARGET/$SUBARCH/immortalwrt-sdk-22.03-$TARGET-${SUBARCH}_gcc-11.2.0_musl.Linux-x86_64.tar.xz"
+    "23.05")
+        SDK_URL="https://mirrors.pku.edu.cn/immortalwrt/releases/22.03-SNAPSHOT/targets/$TARGET/$SUBARCH/immortalwrt-sdk-22.03-SNAPSHOT-$TARGET-${SUBARCH}_gcc-12.3.0_musl.Linux-x86_64.tar.zst"
         ;;
-    "snapshot")
-        SDK_URL="https://downloads.immortalwrt.org/snapshots/targets/$TARGET/$SUBARCH/immortalwrt-sdk-$TARGET-${SUBARCH}_gcc-12.3.0_musl.Linux-x86_64.tar.xz"
+    "25.12")
+        SDK_URL="https://mirrors.pku.edu.cn/immortalwrt/releases/25.12-SNAPSHOT/targets/$TARGET/$SUBARCH/immortalwrt-sdk-25.12-SNAPSHOT-$TARGET-${SUBARCH}_gcc-14.3.0_musl.Linux-x86_64.tar.zst"
         ;;
     *)
         echo "Unsupported toolchain version: $TOOLCHAIN_VERSION"
@@ -35,10 +35,10 @@ esac
 
 # 下载并解压工具链
 echo "Downloading ImmortalWRT SDK..."
-wget -O /tmp/sdk.tar.xz $SDK_URL
+wget -O /tmp/sdk.tar.zst $SDK_URL
 
 echo "Extracting toolchain..."
-sudo tar -xJf /tmp/sdk.tar.xz -C $TOOLCHAIN_DIR --strip-components=1
+sudo tar -xJf /tmp/sdk.tar.zst -C $TOOLCHAIN_DIR --strip-components=1
 
 # 设置环境变量
 echo "Setting up environment variables..."

@@ -16,13 +16,13 @@ on:
       toolchain_version:
         description: 'ImmortalWRT Toolchain 版本'
         required: false
-        default: '21.02'
+        default: '24.10'
         type: choice
         options:
-          - '19.07'
+          - '24.10'
           - '21.02'
-          - '22.03'
-          - 'snapshot'
+          - '23.05'
+          - '25.12'
 
 env:
   OUTPUTS_BRANCH: 'outputs'
