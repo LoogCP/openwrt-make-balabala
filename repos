@@ -3,6 +3,8 @@
 # Git 仓库示例
 luci-app-pushbot|git|https://github.com/gaoyaxuan/luci-app-pushbot.git
 homeproxy|git|https://github.com/immortalwrt/homeproxy.git|dev
+caddy-custom|git|https://github.com/LoogCP/openwrt-caddy.git
+
 # 其他协议示例
 # openssh|git|https://github.com/openssh/openssh-portable.git|master
 # svn-app|svn|https://svn.example.com/project/trunk|
