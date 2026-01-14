@@ -38,7 +38,7 @@ echo "Downloading ImmortalWRT SDK..."
 wget -O /tmp/sdk.tar.zst $SDK_URL
 
 echo "Extracting toolchain..."
-sudo tar -xJf /tmp/sdk.tar.zst -C $TOOLCHAIN_DIR --strip-components=1
+sudo tar --zstd -xf /tmp/sdk.tar.zst -C $TOOLCHAIN_DIR --strip-components=1
 
 # 设置环境变量
 echo "Setting up environment variables..."
