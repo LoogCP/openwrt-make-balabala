@@ -4,8 +4,9 @@
 # 类型: file=从packages文件夹编译, repo=从repos中获取
 
 # 启用编译的示例
-1|homeproxy|repo
-1|luci-app-pushbot|repo
+0|homeproxy|repo
+0|luci-app-pushbot|repo
+1|caddy-custom|repo
 
 # 禁用编译的示例（可以保留用于说明）
 0|disabled-app|repo
