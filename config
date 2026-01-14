@@ -1,0 +1,14 @@
+# 配置文件格式：状态|包名|类型
+# 状态: 1=启用编译, 0=禁用编译
+# 包名: 软件包名称，重复时只编译第一个出现的
+# 类型: file=从packages文件夹编译, repo=从repos中获取
+
+# 启用编译的示例
+1|homeproxy|repo
+1|luci-app-pushbot|repo
+
+# 禁用编译的示例（可以保留用于说明）
+0|disabled-app|repo
+
+# 注释示例（不会编译）
+# 1|commented-app|file

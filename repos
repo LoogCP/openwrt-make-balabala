@@ -1,0 +1,11 @@
+# 仓库列表格式：包名|协议|仓库地址|分支/标签(可选)
+
+# Git 仓库示例
+luci-app-pushbot|git|https://github.com/gaoyaxuan/luci-app-pushbot.git
+homeproxy|git|https://github.com/immortalwrt/homeproxy.git|dev
+# 其他协议示例
+# openssh|git|https://github.com/openssh/openssh-portable.git|master
+# svn-app|svn|https://svn.example.com/project/trunk|
+# hg-app|hg|https://hg.example.com/repo|
+
+# 支持协议：git, svn, hg (Mercurial)
